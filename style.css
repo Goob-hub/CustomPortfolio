@@ -1,0 +1,162 @@
+h1{
+    font-family: 'Space Mono', monospace;
+}
+
+.Head{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.head-info{
+    width: fit-content;
+}
+
+.head-info h1 {
+    font-weight: bolder;
+    font-size: 59px;
+    color: white;
+}
+
+.head-info h2 {
+    font-size: 25px;
+    font-family: 'Antic', sans-serif;
+    color: #9B9B9B;
+    margin: 1em 0 1em 0;
+}
+
+.Work, .About{
+    background-color: #0F1819;
+    color: white;
+    padding: 30px 0px 30px 0px;
+}
+
+.Work h1, .About h1{
+    font-size: 46px;
+    margin: 10px;
+}
+
+.proj-desc, .about-me  {
+    font-size: 19.2px;
+}
+
+.projects, .container-about{
+    padding-top: 1em;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 100%;
+    gap: 20px;
+    text-align: center;
+}
+
+.container-about {
+    grid-template: 1fr 1fr / 100%;
+    gap: 0px;
+    align-items: center;
+}
+
+.container-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proj-info > *, .info-me > *{
+    margin: 10px;
+}
+
+.social-media{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+    color: #edaf37;
+}
+
+.action{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    width: 80%;
+}
+
+.btn{
+    font-family: 'Antic', sans-serif;
+    background-color: #edaf37;
+    color: #222344;
+    border-radius: 0px;
+    font-size: 1.25em;
+}
+
+.btn:hover{
+    transform: .5s;
+    opacity: 1;
+    background-color: #eaa61d;
+}
+
+.btn:active .btn:focus{
+    opacity: 1;
+    background-color: rgb(255, 170, 0, 1);
+}
+
+@media (min-width: 769px) {
+    .head-info h1{
+        font-size: 69px;
+    }
+
+    .head-info h2{
+        font-size: 35px;
+    }
+
+    .proj-desc, .about-me  {
+        font-size: 22px;
+    }
+
+    .projects, .container-about{
+        min-height: 80vh;
+    }
+
+    .btn{
+        font-size: 1.5em;
+    }
+
+    .projects{
+        grid-template: 100% / 1fr 1fr 1fr;
+    }    
+
+    .container-about{
+        grid-template: 100% / 1fr 1fr;
+    }
+
+    .info-me > *{
+        margin: 20px;
+    }
+
+    svg{
+        margin: 0;
+    }
+
+}
+
